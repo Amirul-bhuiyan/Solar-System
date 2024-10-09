@@ -1,0 +1,499 @@
+/* ===============common css start here=========== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+/* ============common css end here================== */
+body{
+    background:url(./images/back.jpg);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.SoalrSystem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sun_card{
+    height: 100px;
+    width: 100px;
+    background-image: url(./images/sun-removebg-preview.png);
+    border-radius: 100%;
+    background-size: cover;
+    position: absolute;
+    animation: sun 8s linear infinite;
+}
+@keyframes sun{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+}
+
+/* ===========================First planet start */
+/* ===========Orbit_1 */
+.orbit_1{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    position: relative;
+    animation: orbit_1 4s linear infinite;
+}
+/* ============Planet_1 */
+.planet_1{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-image: url(./images/mercury.png);
+    background-size: cover;
+    position: relative;
+    top:0.5em;
+    left: 7em;
+    animation: planet_1 8s linear infinite;
+}
+/* =============Orbit_1 animation */
+@keyframes orbit_1{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+}
+/* =============palnet_1 animation */
+@keyframes planet_1 {
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+}
+/* ===========================First planet ends */
+/* ===========================Second planet start */
+/* ==============Orbit_2 */
+.orbit_2{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    position: absolute;
+    animation: orbit_2 6s linear infinite;
+}
+/* ==============Planet_2 */
+.planet_2{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-image: url(./images/Earth.png);
+    background-size: cover;
+    position: relative;
+    top:0em;
+    left: 11em;
+    animation: planet_2 8s linear infinite;
+}
+/* ============moon orbit start */
+.orbit_2a{
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    position: absolute;
+    top: -18px;
+    left: 158px;
+    animation: orbit_2a 6s linear infinite;
+}
+/* ============moon satelite start */
+.moon{
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-image: url(./images/moon.png);
+    background-size: cover;
+    /* background: #4e54c8; */
+    /* background: linear-gradient(
+    to right,
+    #4e54c8,#8f94fb); */
+    position: absolute;
+    top: 2px;
+    left: 65px;
+    animation:moon 3s linear infinite;
+}
+/* =============moon satelite animation start */
+@keyframes moon{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+}
+/* ============moon orbit animation start */
+@keyframes orbit_2a{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+}
+/* ===========Orbit_2 animation */
+@keyframes orbit_2{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+}
+/* ==========planet_2 animation */
+@keyframes planet_2 {
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+}
+/* ===========================Second planet end */
+/* ===========================Third planet start */
+/* ================orbit_3 */
+.orbit_3{
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    position: absolute;
+    animation: orbit_3 10s linear infinite;
+}
+.planet_3{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-image: url(./images/mars.png);
+    background-size: cover;
+    position: relative;
+    top:2em;
+    left: 20em;
+    animation: planet_3 10s linear infinite;
+}
+/* =============Orbit 3 animation */
+@keyframes orbit_3 {
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+    
+}
+/* =============planet 3 animation */
+@keyframes planet_3 {
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+    
+}
+/* ====================Asteroid part start */
+/* ===========Asteroid orbit part */
+.asteroid_orbit{
+    height: 550px;
+    width: 550px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    position: absolute;
+    animation:  asteroid_orbit 15s linear infinite;
+}
+/* ====================Asteroid part */
+.asteroid{
+    height: 80px;
+    width: 70px;
+    background-image: url(./images/asteroid-63125_640-removebg-preview.png);
+    background-size: cover;
+    position: relative;
+    top: 27px;
+    left: 429px;
+}
+.asteroid_1{
+    height: 90px;
+    width: 70px;
+    background-image: url(./images/asteroid-63125_640-removebg-preview.png);
+    background-size: cover;
+    position: relative;
+    top: -52px;
+    left: 455px;
+}
+/* ===========Asteroid orbit animation */
+@keyframes asteroid_orbit{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+    
+}
+/* =======================Planet 4 part start */
+/* ============================planet 04 start */
+.orbit_4{
+    height: 1050px;
+    width: 1050px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    position: absolute;
+    animation: orbit_4 25s linear infinite;
+}
+.planet_4{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url(./images/saturn.png); /* Make sure this path is correct */
+    background-size: contain; /* Ensure the entire image fits within the div */
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 48px;
+    left: 765px;
+    animation: planet_4 12s linear infinite;
+}
+.orbit_4a{
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white transparent transparent transparent ;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    position: absolute;
+    animation: orbit_4a 25s linear infinite;
+    top: -104px;
+    left: -89px;
+    animation: orbit_4a 5s linear infinite;
+}
+@keyframes orbit_4{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+    
+}
+@keyframes orbit_4a{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+    
+}
+.sat_1{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #E3A869; /* Titan's soft orange-yellow color */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), /* Inner shadow for depth */
+                0 0 15px 5px rgba(255, 165, 0, 0.6); /* Orange glow to simulate atmosphere */
+    top: 28px;
+    left: 266px;
+
+}
+/* ==========================Planet 05 start */
+/* =====================orbit 5 start */
+.orbit_5{
+    height: 1550px;
+    width: 1550px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    position: absolute;
+    animation: orbit_5 40s linear infinite;  
+}
+/* =====================planet 05 start */
+.planet_5{
+    width: 550px;
+    height: 550px;
+    background-image: url(./images/Jupiter.png);
+    border-radius: 100%;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 129px;
+    left: 1118px;
+    /* animation: planet_5 25s linear infinite; */
+}
+/* ===================animation part start */
+@keyframes orbit_5{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+    
+}
+@keyframes planet_5{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+    
+}
+/* =====================planet 05 end */
+/* ===========================palnet 6 start */
+.planet_6{
+    width: 200px;
+    height: 200px;
+    background-image: url(./images/uranus.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: relative;
+    animation: planet_6 40s infinite linear;
+    top: 169px;
+    left: 1600px;
+    animation: planet_6 25s linear infinite;
+}
+.orbit_6{
+    height: 2000px;
+    width: 2000px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    position: absolute;
+    animation: orbit_6 50s linear infinite;  
+}
+@keyframes orbit_6{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+    
+}
+@keyframes planet_6{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+    
+}
+/* ===========================palnet 6 end */
+/* ==========================planet 7 start */
+.orbit_7{
+    height: 2500px;
+    width: 2500px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    position: absolute;
+    animation: orbit_7 80s linear infinite;  
+}
+.planet_7{
+    width: 200px;
+    height: 200px;
+    background-image: url(./images/neptune.png);
+    border-radius: 50%;
+    position: relative;
+    background-size: cover;
+    animation: planet_7 12s infinite linear;
+    top: 272px;
+    left: 2039px;
+    animation: planet_7 45s linear infinite;
+}
+@keyframes orbit_7{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+    
+}
+@keyframes planet_7{
+    0%{
+        transform: rotatez(0deg);
+    }
+    100%{
+        transform: rotatez(360deg);
+    }
+    
+}
+/* ==========================planet 7 end */
+/* ===================comet part start */
+.comet {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8);
+    animation: moveComet 5s linear infinite;
+    top: -800px;
+    left: -2500px;
+}
+
+.tail {
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), transparent);
+    top: 50%;
+    left: -80px;
+    transform: translateY(-50%);
+    filter: blur(2px);
+}
+
+@keyframes moveComet {
+    0% {
+        transform: translate(100px, 0); /* Start from the left edge */
+    }
+    100% {
+        transform: translate(100vw, 100vh); /* Move diagonally to the bottom right */
+    }
+}
